@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <script src="https://kit.fontawesome.com/66ddf9928d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title> Registration Page</title>
+</head>
+<body>
+    <div>
+        <section class="left-menu">
+           <img src="../images/image1.svg" alt="">
+           
+        </section>
+
+        <section class="right-section">
+
+                <form action="" id="contactForm">
+                    <h2>Registration credentials</h2>
+                    
+                    <div class="alert">Details sent successfully</div><br>
+
+                    <label for="">Username</label><br>
+                    <input type="text" name="" id="username" placeholder="Username"><br>
+                    <div id="error1"></div><br>
+    
+                    <label for="">Email</label><br>
+                    <input type="text" name="" id="email" placeholder="email"><br>
+                    <div id="error2"></div><br>
+    
+                    <label for="">Phone</label><br>
+                    <input type="text" name="" id="phone" placeholder="phone"><br>
+                    <div id="error3"></div><br>
+
+                    <label for="">Password</label><br>
+                    <input type="password" name="" id="password-input" placeholder="Password"><br>
+                    <div id="error4"></div><br>
+    
+                    <input type="checkbox" id="show-password-checkbox">
+                    <label for="">Show Password</label><br>
+    
+                    <input type="submit" value="Register"><br>
+                    <p>Already have an account? <a href="">Click here</a></p><br>
+                 </form><br>
+
+            </section>
+            </div>
+
+    </div>
+    
+    <script src="Yatch.js"></script>
+    <script src="/server/config.js"></script>
+</body>
+</html>
