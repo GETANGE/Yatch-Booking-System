@@ -18,31 +18,39 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 function submitForm(e){
   e.preventDefault();
 
- //get all the values.
- var username=getInputVal('username');
- var email=getInputVal('email');
- var phone=getInputVal('phone');
- var password=getInputVal('password-input');
+  // get all the values
+  var username = document.getElementById('username').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+  var password = document.getElementById('password-input').value;
 
- console.log(username, email,phone, password);
+    // check if required fields are empty
+    if (username === '' || email === '' || phone === '' || password === '') {
+      alert('Please fill all the fields');
+      return;
+    }
 
- //enable alert
- document.querySelector('.alert').style.display='block';
+  console.log(username, email, phone, password);
 
- //remove alert.
- setTimeout(function() {
-   document.querySelector('.alert').style.display='none';
- },3000);
+  // enable alert
+  document.querySelector('.alert').style.display = 'block';
 
- contactFormDB.collection('Custormers').add({
-  name: username,
-  email: email,
-  phone: phone,
-  password: password
- });
-}
+  // remove alert
+  setTimeout(function() {
+    document.querySelector('.alert').style.display = 'none';
+  }, 3000);
 
-//function to get form values from the contact form.
-function getInputVal(id){
-  return document.getElementById(id).value;
+  // add user to database
+  contactFormDB.collection('Custormers').doc(email).set({
+    name: username,
+    email: email,
+    phone: phone,
+    password: password
+  })
+  .then(function() {
+    console.log('User added to database');
+  })
+  .catch(function(error) {
+    console.error('Error adding user to database: ', error);
+  });
 }
