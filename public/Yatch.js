@@ -2,6 +2,7 @@
 const passwordInput = document.getElementById('password-input');
 const showPasswordCheckbox = document.getElementById('show-password-checkbox');
 
+
 showPasswordCheckbox.addEventListener('change', function() {
   if (showPasswordCheckbox.checked) {
     passwordInput.type = 'text';
