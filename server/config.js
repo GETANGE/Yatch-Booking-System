@@ -41,6 +41,7 @@ function submitForm(e){
   }, 3000);
 
   // add user to database
+  //preventing double registration.
   contactFormDB.collection('Custormers').doc(email).set({
     name: username,
     email: email,
