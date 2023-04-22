@@ -13,9 +13,11 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var contactFormDB = firebase.firestore();
 
-//add event listener to the form.
+
+// add event listener to the form.
 document.getElementById('contactForm').addEventListener('submit', submitForm);
-function submitForm(e){
+
+async function submitForm(e){
   e.preventDefault();
 
   // get all the values
@@ -24,11 +26,11 @@ function submitForm(e){
   var phone = document.getElementById('phone').value;
   var password = document.getElementById('password-input').value;
 
-    // check if required fields are empty
-    if (username === '' || email === '' || phone === '' || password === '') {
-      alert('Please fill all the fields');
-      return;
-    }
+  // check if required fields are empty
+  if (username === '' || email === '' || phone === '' || password === '') {
+    alert('Please fill all the fields');
+    return;
+  }
 
   console.log(username, email, phone, password);
 
@@ -40,9 +42,16 @@ function submitForm(e){
     document.querySelector('.alert').style.display = 'none';
   }, 3000);
 
+  // check if user already exists
+  const userRef = contactFormDB.collection('Customers').doc(email);
+  const userDoc = await userRef.get();
+  if (userDoc.exists) {
+    alert('This email is already registered.');
+    return;
+  }
+
   // add user to database
-  //preventing double registration.
-  contactFormDB.collection('Custormers').doc(email).set({
+  contactFormDB.collection('Customers').doc(email).set({
     name: username,
     email: email,
     phone: phone,
