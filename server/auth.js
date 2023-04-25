@@ -14,5 +14,3 @@ const firebaseConfig = {
   //initialize variables.
   const auth = firebase.auth();
   const database = firebase.database();
-
-  //set
