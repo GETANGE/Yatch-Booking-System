@@ -86,6 +86,7 @@
   top: -100px;
   right: -100px;
 }
+
 /* Small devices (phones) */
 @media only screen and (max-width: 600px) {
   .logo{
