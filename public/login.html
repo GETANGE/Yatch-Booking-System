@@ -15,13 +15,16 @@
 
             <form action="">
                 <label for="">Username</label><br>
-                <input type="text"><br>
+                <input type="text" id="username1"><br>
+                <div id="error10"  style="color: red;"></div><br>
                 
                 <label for="Email">Email</label><br>
-                <input type="email"><br>
+                <input type="email" id="email1"><br>
+                <div id="error20" style="color: red;"></div><br>
 
                 <label for="">Password</label><br>
-                <input type="password"><input type="checkbox"><br>
+                <input type="password" id="password-input"><input type="checkbox" id="show-password-checkbox"><br>
+                <div id="error30" style="color: red;"></div><br>
 
                 <p>Or login with</p><br>
                 <div class="media">
@@ -30,8 +33,48 @@
                     <i class='bx bxl-linkedin-square'></i>
                     <i class='bx bxl-twitter' ></i>
                 </div>
+
+                <button>Login</button>
             </form>
         </section>
     </div>  
+    <script>
+        function blur10(){
+            let username1 = document.getElementById('username1');
+            let error10 =document.getElementById('error10');
+
+            username1.addEventListener('blur', function(){
+                if(username1.value.trim() === ''){
+                    error10.textContent = 'Username is required'
+                    error10.style.display ='block';
+                }
+                else{
+                    error10.style.display ='none';
+                }
+            })
+        }
+        blur10();
+
+       function blurEmail(){
+            let email1 = document.getElementById('email1');
+            let error20 = document.getElementById('error20');
+
+            email1.addEventListener('blur', function(){
+                if(!email1.value.includes('@')){
+                    email1.classList.add('invalid');
+                    error20.textContent = 'Please enter a valid email address';
+                }
+            });
+
+            email1.addEventListener('focus',function(){
+                if(this.classList.contains('invalid')){
+                    this.classList.remove('invalid');
+                    error20.textContent = '';
+                }
+            });
+        }
+        blurEmail();
+    </script>
+    <script src="Yatch.js"></script>
 </body>
 </html>

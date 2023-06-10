@@ -1,3 +1,5 @@
+
+//login page for the both forms dynamic linnking.
 function passwordCheck(){
   //show passwords created by use of the checkbox.
 const passwordInput = document.getElementById('password-input');
@@ -13,6 +15,41 @@ showPasswordCheckbox.addEventListener('change', function() {
 }
 passwordCheck();
 
+function blur1(){
+  let firstname=document.getElementById('firstname');
+  let error5=document.getElementById('error5');
+
+  firstname.addEventListener('blur', function(){
+    if(firstname.value.trim()===''){
+      error5.textContent='Please input your first name';
+      error5.style.display='block';
+    }
+    else{
+      error5.style.display='none';
+
+    }
+  })
+}
+blur1();
+
+
+function blur2() {
+  var secondname = document.getElementById('secondname');
+  var error3 = document.getElementById('error3');
+
+  secondname.addEventListener('blur', function(){
+    if(secondname.value.trim() === ''){
+      error3.textContent ='Please enter a second name';
+      error3.style.display='block';
+
+    }
+    else{
+      error3.style.display='none';
+    }
+  })
+}
+blur2();
+
 function blur(){
  //focusing on blur
 //username.
@@ -23,15 +60,13 @@ username.addEventListener('blur', function() {
   if (username.value.trim() === '') {
     error1.textContent = 'Username cannot be empty';
     error1.style.display = 'block'; // Show the error message
-    username.classList.add('invalid');
-  } else {
+  } 
+  else {
     error1.style.display = 'none'; // Hide the error message
-    username.classList.remove('invalid');
    }
  });
 }
 blur();
-
 
 function blurEmail(){
   //focusing on the email

@@ -15,19 +15,24 @@
 
             <form action="">
                 <label for="">Username</label><br>
-                <input type="text"><br>
+                <input type="text" id="username"><br>
+                <div id="error1"  style="color: red;"></div><br>
                 
                 <label for="">First Name</label><br>
-                <input type="text" required value="Firstname"><br>
+                <input type="text"  id="firstname"><br>
+                <div id="error5" style="color: red;"></div><br>
 
                 <label for="">Second Name</label><br>
-                <input type="text" value="Second"><br>
+                <input type="text"  id="secondname"><br>
+                <div id="error3" style="color: red;"></div><br>
 
                 <label for="Email">Email</label><br>
-                <input type="email"><br>
+                <input type="email" id="email"><br>
+                <div id="error2" style="color: red;"></div><br>
 
                 <label for="">Password</label><br>
-                <input type="password"><input type="checkbox"><br>
+                <input type="password" id="password-input"><input type="checkbox" id="show-password-checkbox"><br>
+                <div id="error4" style="color: red;"></div><br>
 
                 <p>Or sign in with</p><br>
                 <div class="media">
@@ -37,7 +42,10 @@
                     <i class='bx bxl-twitter' ></i>
                 </div>
             </form>
+
         </section>
     </div>  
+
+    <script src="Yatch.js"></script>
 </body>
 </html>
