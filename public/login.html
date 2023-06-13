@@ -4,39 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="Yatch.css">
+    <link rel="stylesheet" href="login.css">
     <title>Login form</title>
 </head>
 <body class="login-body">
     <div class="main">
 
-        <section class="loginA"></section>
-        <section class="loginB">
-
-            <form action="">
-                <label for="">Username</label><br>
-                <input type="text" id="username1"><br>
-                <div id="error10"  style="color: red;"></div><br>
-                
-                <label for="Email">Email</label><br>
-                <input type="email" id="email1"><br>
-                <div id="error20" style="color: red;"></div><br>
-
-                <label for="">Password</label><br>
-                <input type="password" id="password-input"><input type="checkbox" id="show-password-checkbox"><br>
-                <div id="error30" style="color: red;"></div><br>
-
-                <p>Or login with</p><br>
-                <div class="media">
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-linkedin-square'></i>
-                    <i class='bx bxl-twitter' ></i>
+        <section class="loginA">
+            <div class="margin">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="no image">
                 </div>
-
-                <button>Login</button>
-            </form>
+                <div class="lower">
+                    <p class="paragraph1">Don't have an <br> account?</p>
+                    <p >Register to access all the features of our services. <br>
+                    Manage your lucrative services in one place .Its free! </p>
+                </div>
+            </div>
         </section>
+        <div class="loginB">
+
+
+            <section class="loginB2">
+
+                <form action="">
+                    <i class='bx bx-user'></i> <label for="">Username</label><br>
+                    <input type="text" id="username1" class="input"><br>
+                    <div id="error10"  style="color: red;"></div><br>
+                    
+                    <i class='bx bxs-envelope' ></i><label for="Email">Email</label><br>
+                    <input type="email" id="email1" class="input"><br>
+                    <div id="error20" style="color: red;"></div><br>
+    
+                    <i class='bx bxs-lock-alt' ></i><label for="">Password</label><br>
+                    <input type="password" id="password-input" class="input"><input type="checkbox" id="show-password-checkbox"><br>
+                    <div id="error30" style="color: red;"></div><br>
+    
+                    <p>Or login with</p><br>
+                    <div class="media">
+                        <div class="border">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </div>
+                        <div class="border">
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+                        <div class="border">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </div>
+                        <div class="border">
+                            <i class='bx bxl-twitter' ></i>
+                        </div>
+                    </div><br>
+    
+                    <button>Login</button>
+                </form>
+            </section>
+        </div>
+
     </div>  
     <script>
         function blur10(){

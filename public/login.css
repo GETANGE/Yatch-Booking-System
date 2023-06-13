@@ -1,0 +1,82 @@
+.login-body{
+    background-image: url("/images/image4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+:root {
+    --color1: #000;
+    --color2: #001;
+    --color3: #fff;
+    --color4: #ff34;
+  }  
+.main{
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loginA{
+    display: inline-block;
+    height: 100vh;
+    width: 60%;
+}
+.loginB{
+    display: inline-block;
+    height: 100vh;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    opacity: 0.7;
+    position: relative;
+}
+.loginB2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*Styling the border bottom effect*/
+.input{
+    border: none;
+    color: aqua;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    padding: 5px;
+    width: 200px;
+}
+.lower{
+    padding-top: 300px;
+    color: aquamarine;
+}
+.paragraph1{
+    font-size: 26px;
+}
+.margin{
+    padding-left: 50px;
+}
+button{
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+.media{
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    padding: 13px;
+    border-style: solid;
+    border-radius: 100px;
+}
+.border:hover{
+    
+}
