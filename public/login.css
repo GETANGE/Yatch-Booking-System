@@ -1,18 +1,19 @@
 .login-body{
-    background-image: url("/images/image4.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     margin: 0;
+    background-color: var(--color1);
+}
+.svg{
+    height: 100%vh;
+    width: 80%;
+    color: var(--color2);
 }
 :root {
-    --color1: #001B48;
-    --color2: #02457A;
-    --color3: #018ABE;
-    --color4: #97CADB;
-    --color5: #D6E8EE;
+    --color1: #021024;
+    --color2: #052659;
+    --color3: #E89C31;
+    --color4: #E5E5E5;
+    --color5: #FFFFFF;
   }  
 .main{
     white-space: nowrap;
@@ -22,6 +23,7 @@
     height: 100vh;
 }
 .loginA{
+    background-color: #021024;
     display: inline-block;
     height: 100vh;
     width: 60%;
@@ -30,11 +32,9 @@
     display: inline-block;
     height: 100vh;
     width: 40%;
-    background-color: black;
-    color: white;
+    background-color: var(--color5);
+    color:  var(--color3);
     padding: 20px;
-    backdrop-filter: blur(5px);
-    opacity: 0.7;
     position: relative;
 }
 .loginB2{
@@ -42,32 +42,40 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #021024;
 }
 /*Styling the border bottom effect*/
 .input{
     border: none;
-    color: aqua;
+    color: var(--color3);
     border-radius: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--color1);
     background-color: transparent;
     padding: 5px;
     width: 200px;
 }
 .lower{
-    padding-top: 300px;
-    color: aquamarine;
+    padding-top: 10px;
+    color: var(--color5);
 }
 .paragraph1{
     font-size: 26px;
+    color: var(--color3);
 }
 .margin{
     padding-left: 50px;
 }
 button{
     padding: 10px;
-    width: 200px;
+    width: 230px;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background-color: var(--color3);
+    border-style: none;
+}
+button:hover{
+    background-color: var(--color1);
+    color: var(--color5);
+    cursor: pointer;
 }
 .media{
     display: flex;
@@ -77,6 +85,10 @@ button{
     padding: 13px;
     border-style: solid;
     border-radius: 100px;
+}
+.border:hover{
+    border-color: var(--color3);
+    cursor: pointer;
 }
 
 
@@ -96,7 +108,7 @@ button{
   /* Media query for medium-sized screens */
   @media (min-width: 601px) and (max-width: 1024px) {
 
-    .loginB{
+    .loginB2{
         height: 100vh;
         width: 100%;
     }
