@@ -8,10 +8,11 @@
     margin: 0;
 }
 :root {
-    --color1: #000;
-    --color2: #001;
-    --color3: #fff;
-    --color4: #ff34;
+    --color1: #001B48;
+    --color2: #02457A;
+    --color3: #018ABE;
+    --color4: #97CADB;
+    --color5: #D6E8EE;
   }  
 .main{
     white-space: nowrap;
