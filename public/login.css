@@ -15,7 +15,18 @@
     --color4: #E5E5E5;
     --color5: #FFFFFF;
     --color6: red;
-  }  
+  } 
+  .p{
+    font-size: 25px;
+    color: var(--color3);
+    padding-bottom: 40px;
+  }
+  i{
+    font-size: 26px;
+  } 
+  label{
+    font-size: 20px;
+  }
   a{
     color: var(--color6);
     text-decoration: none;
@@ -63,6 +74,7 @@
     background-color: transparent;
     padding: 5px;
     width: 250px;
+    font-size: 20px;
 }
 .lower{
     padding-top: 10px;
