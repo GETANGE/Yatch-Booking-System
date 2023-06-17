@@ -1,5 +1,3 @@
-
-//login page for the both forms dynamic linnking.
 function passwordCheck(){
   //show passwords created by use of the checkbox.
 const passwordInput = document.getElementById('password-input');
