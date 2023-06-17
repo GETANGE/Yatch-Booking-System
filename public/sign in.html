@@ -4,45 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="Yatch.css">
+    <link rel="stylesheet" href="sign in.css">
     <title>Sign in form</title>
 </head>
 <body class="login-body">
     <div class="main">
 
-        <section class="loginA"></section>
+
         <section class="loginB">
+            <div class="loginB2">
+                <p></p><br>
+                <p class="p">Register your details here</p>
+                <form action="">
+                    <label for="">Username</label><br>
+                    <input type="text" id="username" class="input"><i class='bx bxs-user'></i><br>
+                    <div id="error1"  style="color: red;"></div><br>
+                    
+                    <label for="">First Name</label><br>
+                    <input type="text"  id="firstname" class="input"><i class='bx bxs-user'></i><br>
+                    <div id="error5" style="color: red;"></div><br>
+    
+                    <label for="">Second Name</label><br>
+                    <input type="text"  id="secondname" class="input"><i class='bx bxs-user'></i><br>
+                    <div id="error3" style="color: red;"></div><br>
+    
+                    <label for="Email">Email</label><br>
+                    <input type="email" id="email" class="input"><i class='bx bxs-envelope'></i><br>
+                    <div id="error2" style="color: red;"></div><br>
+    
+                    <label for="">Password</label><br>
+                    <input type="password" id="password-input" class="input"><i class='bx bxs-lock-alt' ></i><br><input type="checkbox" id="show-password-checkbox"><br>
+                    <div id="error4" style="color: red;"></div><br>
+    
+                    <p style="margin-left:90px">Or sign in with</p><br>
+                    <div class="media">
+                        <div class="border">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </div>
+                        <div class="border">
+                            <i class='bx bxl-google'></i>
+                        </div>
 
-            <form action="">
-                <label for="">Username</label><br>
-                <input type="text" id="username"><br>
-                <div id="error1"  style="color: red;"></div><br>
-                
-                <label for="">First Name</label><br>
-                <input type="text"  id="firstname"><br>
-                <div id="error5" style="color: red;"></div><br>
+                        <div class="border">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </div>
 
-                <label for="">Second Name</label><br>
-                <input type="text"  id="secondname"><br>
-                <div id="error3" style="color: red;"></div><br>
+                        <div class="border">
+                            <i class='bx bxl-twitter' ></i>
+                        </div>
+                    </div>
+                    <button >Register</button>
+                </form>
+            </div>
 
-                <label for="Email">Email</label><br>
-                <input type="email" id="email"><br>
-                <div id="error2" style="color: red;"></div><br>
-
-                <label for="">Password</label><br>
-                <input type="password" id="password-input"><input type="checkbox" id="show-password-checkbox"><br>
-                <div id="error4" style="color: red;"></div><br>
-
-                <p>Or sign in with</p><br>
-                <div class="media">
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-linkedin-square'></i>
-                    <i class='bx bxl-twitter' ></i>
-                </div>
-            </form>
-
+        </section>
+        <section class="loginA">
+            <img src="/images/logo.png" alt="" class="logo"><br>
+            <img src="/images/image2.svg" alt="" class="svg">
         </section>
     </div>  
 

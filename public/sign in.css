@@ -1,7 +1,149 @@
 :root {
-    --color1: #001B48;
-    --color2: #02457A;
-    --color3: #018ABE;
-    --color4: #97CADB;
-    --color5: #D6E8EE;
-  } 
+  --color1: #021024;
+  --color2: #052659;
+  --color3: #E89C31;
+  --color4: #E5E5E5;
+  --color5: #FFFFFF;
+  --color6: red;
+  --color7: #1B2223;
+  --color8: #0EF6CC;
+} 
+.main{
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-body{
+  height: 100vh;
+  margin: 0;
+  color: var(--color5);
+  background-color: var(--color1);
+}
+.loginA{
+  background-color: var(--color1);
+  display: inline-block;
+  height: 100vh;
+  width: 60%;
+}
+.loginB{
+  background-color: var(--color5);
+  display: inline-block;
+  height: 112vh;
+  width: 40%;
+  color: var(--color1);
+  font-size: 20px;
+  position: relative;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.p{
+  font-size: 25px;
+  color: var(--color3);
+  padding-bottom: 20px;
+}
+i{
+  font-size: 26px;
+} 
+label{
+  font-size: 25px;
+  color: var(--color2);
+}
+a{
+  color: var(--color6);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--color2);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.svg{
+  height: 100%vh;
+  width: 80%;
+  color: var(--color2);
+}
+.input{
+  border: none;
+  color: var(--color3);
+  border-radius: 0;
+  border-bottom: 1px solid var(--color1);
+  background-color: transparent;
+  padding: 5px;
+  width: 70%;
+  font-size: 24px;
+}
+.media{
+  display: flex;
+  margin-left: 50px;
+}
+.border{
+  padding:10px;
+  border:2px solid var(--color2);
+  border-radius: 100px;
+  margin: 10px;
+}
+.border:hover{
+  border-color: var(--color2);
+  cursor: pointer;
+}
+button{
+  padding: 10px;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 10px;
+  background-color: var(--color3);
+  border-style: none;
+}
+button:hover{
+  background-color: var(--color1);
+  color: var(--color5);
+  cursor: pointer;
+}
+/*media queries for responsiveness  */
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+
+  .loginA{
+      display: none;
+  }
+  .loginB{
+      height: 110vh;
+      width: 140%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .media{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: -40px;
+  }
+  button{
+    margin-left: 0px;
+  }
+  .p{
+    margin-left: 0 px;
+  }
+}
+
+/* Media query for medium-sized screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .loginB2{
+      height: 100vh;
+      width: 100%;
+  }
+  .media{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: -40px;
+  }
+}
