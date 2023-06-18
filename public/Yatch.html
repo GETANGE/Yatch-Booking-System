@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="Yatch.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -14,11 +15,11 @@
                 <div>
                     <img src="/images/logo.png" alt="" class="logo">
                 </div>
-                <div>
-                    <li><a href=""></a>Home</li>
-                    <li><a href=""></a>About</li>
-                    <li><a href=""></a>Contacts</li>
-                    <li><a href=""></a>Services</li>
+                <div class="icon">
+                    <i class='bx bx-home'></i><li><a href=""></a>Home</li>
+                    <i class='bx bx-user'></i><li><a href=""></a>About</li>
+                    <i class='bx bx-phone'></i><li><a href=""></a>Contacts</li>
+                    <i class='bx bx-service'></i><li><a href=""></a>Services</li>
                 </div>
             </ul>
         </nav>
@@ -39,17 +40,36 @@
         
                 <a href="login.html"><input type="button" value="Login"></a>
                 <a href="sign in.html"><input type="button" value="Register"></a>
-            </div>
+            </div><br>
     
             <!-----Added some blobs in the landing page---->
             <div class="blob">
-                <img src="/images/landing.png" alt="">
+                <img src="/images/landing.png" alt="" class="landing">
             </div>
+        </div><br>
+        <div class="container">
+            <h1>Experience the <span class="auto-type"></span></h1>
         </div>
+        <section class="section2" id="About">
 
-        <section class="section2">
+        </section>
+        <section class="section3" id="Contact">
+
+        </section>
+        <section class="section4" id="Services">
 
         </section>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        // Adding the typed JavaScript feature.
+        var typed = new Typed(".auto-type",{
+            strings: ["Luxury", "Exquisite", "Unforgettable"],
+            typeSpeed: 250,
+            backSpeed: 250,
+            loop : true,
+        });
+    </script>
+    <script src="Yatch.js"></script>
 </body>
 </html>
