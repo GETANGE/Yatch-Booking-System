@@ -35,6 +35,25 @@ ul{
   display: flex;
   justify-content: space-between;
 }
+.section2{
+  display: flex;
+  padding-top: 100px;
+  height: 100vh;
+  background-color: var(--color1);
+
+}
+h2{
+  color: var(--color3);
+}
+.about{
+  margin: 0;
+
+}
+.landingIMG{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
 input{
   background-color: var(--color3);
   padding: 10px;
@@ -54,15 +73,7 @@ input{
   display: flex;
   justify-content: space-between;
   margin-right: 100px;
-}
-.section2{
-  background-color: var(--color2);
-}
-.section3{
   background-color: var(--color1);
-}
-.section4{
-  background-color: var(--color2);
 }
 .container{
   margin-top: -140px;
