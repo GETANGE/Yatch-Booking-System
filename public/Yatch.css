@@ -197,6 +197,9 @@ span{
   .container{
     margin-top: 30px;
   }
+  span{
+    display: none;
+  }
   .border{
     display: block;
     width: 100%;
