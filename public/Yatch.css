@@ -109,6 +109,65 @@ span{
   align-items: center;
   border-radius: 20px;
 }
+@media (min-width: 320px) and (max-width:599px){
+  ul{
+    display:flex;
+  }
+  nav ul  li {
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  .main1{
+    display: block;
+    justify-content: space-between;
+  }
+  .blob{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .landing{
+    width: 300px;
+    height: 300px;
+  }
+  .container{
+    margin-top: 30px;
+  }
+  .border{
+    display: block;
+    width: 100%;
+  }
+  .image{
+    width: 100%;
+  }
+  .section2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about{
+    width: 100%;
+    margin: 0;
+  }
+  input{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media (max-width: 600px){
   ul{
     display:flex;
@@ -137,6 +196,24 @@ span{
   }
   .container{
     margin-top: 30px;
+  }
+  .border{
+    display: block;
+    width: 100%;
+  }
+  .image{
+    width: 100%;
+  }
+  .section2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about{
+    width: 100%;
+    margin: 0;
   }
   input{
     display: inline-block;
@@ -177,5 +254,15 @@ span{
     justify-content: center;
     align-items: center;
     margin-left: 30px;
+  }
+  .border{
+    display: flex;
+    padding-top: 200px;
+    height: 100vh;
+    background-color: var(--color1);
+    justify-content: center;
+  }
+  .about{
+    margin-top: -20px;
   }
 }
