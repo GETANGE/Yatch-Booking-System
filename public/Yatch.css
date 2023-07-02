@@ -49,6 +49,9 @@ h2{
   margin-left: 90px;
   margin-top: 80px;
 }
+.h1{
+  color: var(--color3);
+}
 .landingIMG{
   width: 350px;
   height: 350px;
@@ -81,7 +84,9 @@ input{
 span{
   color: var(--color3);
 }
-
+.span2{
+  color: var(--color5);
+}
 .media{
   margin-top:20px;
   display: flex;

@@ -62,7 +62,7 @@ username.addEventListener('blur', function() {
   else {
     error1.style.display = 'none'; // Hide the error message
    }
- });
+ }); 
 }
 blur();
 
