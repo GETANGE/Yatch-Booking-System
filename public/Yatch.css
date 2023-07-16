@@ -66,6 +66,9 @@ h2{
   height: 350px;
   border-radius: 10px;
 }
+.div1{
+  position: relative;
+}
 input{
   background-color: var(--color3);
   padding: 10px;
@@ -80,6 +83,16 @@ input:hover{
 }
 input:active{
   transform: translateY(-1);
+}
+
+/* check on the after effect*/
+input::after{
+  content: "";
+  display: inline-block;
+  width: 100px;
+  top: 0px;
+  left: 0;
+  position: absolute;
 }
 .blob {
   width: 500px;
