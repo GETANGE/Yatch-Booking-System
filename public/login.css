@@ -4,8 +4,10 @@
     background-color: var(--color1);
 }
 .svg{
-    height: 100%vh;
-    width: 80%;
+    margin-top: -100px;
+    height: 10%;
+    width: 65%;
+    margin-left: 100px;
     color: var(--color2);
 }
 :root {
